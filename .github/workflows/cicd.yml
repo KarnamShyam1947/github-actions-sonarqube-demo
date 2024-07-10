@@ -72,6 +72,6 @@
           run: |
             sudo docker run -d \
             -p 8080:8080 \
-            -e JDBC_URL="${{ secrets.APP_NAME }}" \
+            -e APP_NAME="${{ secrets.APP_NAME }}" \
             --name springboot-sonarqube-container \
             ${{ secrets.DOCKERHUB_USERNAME }}/springboot-sonarqube
