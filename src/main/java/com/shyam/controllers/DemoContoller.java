@@ -23,7 +23,7 @@ public class DemoContoller {
                       "email", "karnamshyam9009@gmail.com");
     }
     
-    @GetMapping("/")
+    @GetMapping("/testing")
     public Object sampleTest() {
         logger.warn("Testing warn logs....");
         return Map.of("testing", "okk");
