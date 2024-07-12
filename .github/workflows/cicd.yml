@@ -47,6 +47,8 @@
           id: sonarqube-quality-gate-check
           uses: sonarsource/sonarqube-quality-gate-action@master
           timeout-minutes: 5
+          with:
+            scanMetadataReportFile: .scannerwork/report-task.txt
           env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
             SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} 
