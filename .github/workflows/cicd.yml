@@ -46,7 +46,6 @@
         - name: SonarQube Quality Gate check
           id: sonarqube-quality-gate-check
           uses: sonarsource/sonarqube-quality-gate-action@master
-          timeout-minutes: 5
           with:
             scanMetadataReportFile: .scannerwork/report-task.txt
           env:
