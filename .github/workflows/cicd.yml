@@ -39,6 +39,18 @@
             org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.projectKey=github-actions-sonarqube-demo \
             -Dsonar.projectName='github-actions-sonarqube-demo'
+            - name: SonarQube Quality Gate check
+
+        - name: SonarQube Quality Gate check
+          id: sonarqube-quality-gate-check
+          uses: sonarsource/sonarqube-quality-gate-action@master
+          timeout-minutes: 5
+          env:
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} 
+          
+        - name: "Here is SonarQube Quality Gate Status value.."
+          run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}"
 
         - name: Install dependencies
           run: mvn clean install -DskipTests
