@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v1")
-public class DemoContoller {
+@RequestMapping("/v3")
+public class DemoContoller4 {
 
     @Value("${spring.application.name}")
     private String appName;
