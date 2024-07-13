@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v3")
+@RequestMapping("/v5")
 public class DemoContoller4 {
 
     @Value("${spring.application.name}")
