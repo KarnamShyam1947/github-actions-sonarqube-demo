@@ -53,7 +53,7 @@
           uses: aws-actions/amazon-ecs-render-task-definition@v1
           with:
             task-definition: springboot-deploy-task.json
-            container-name: springboot-deploy-container
+            container-name: springboot-deploy
             image: ${{ steps.build-image.outputs.image }}
 
         - name: Deploy Amazon ECS task definition
