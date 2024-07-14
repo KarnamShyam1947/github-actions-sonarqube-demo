@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:730335235672:task-definition/springboot-deploy-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:730335235672:task-definition/springboot-deploy-task:3",
     "containerDefinitions": [
         {
             "name": "springboot-deploy",
-            "image": "730335235672.dkr.ecr.eu-north-1.amazonaws.com/springboot-deploy:latest",
+            "image": "730335235672.dkr.ecr.eu-north-1.amazonaws.com/springboot-deploy:1ec7e2594d5cfe46e0a4816d093dd49730c85270",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -27,8 +25,7 @@
                     "awslogs-create-group": "true",
                     "awslogs-region": "eu-north-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -37,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::730335235672:role/ecsDeployRole",
     "executionRoleArn": "arn:aws:iam::730335235672:role/ecsDeployRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +80,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-14T17:21:05.218Z",
+    "registeredAt": "2024-07-14T17:40:57.313Z",
     "registeredBy": "arn:aws:iam::730335235672:root",
     "tags": []
 }
