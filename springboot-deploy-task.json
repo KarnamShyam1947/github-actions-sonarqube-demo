@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:730335235672:task-definition/springboot-deploy-task:3",
+    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:730335235672:task-definition/springboot-deploy-task:6",
     "containerDefinitions": [
         {
             "name": "springboot-deploy",
-            "image": "730335235672.dkr.ecr.eu-north-1.amazonaws.com/springboot-deploy:1ec7e2594d5cfe46e0a4816d093dd49730c85270",
+            "image": "730335235672.dkr.ecr.eu-north-1.amazonaws.com/springboot-deploy:cfa9eeee86caa8487f2e7a662e044a5f0be9c320",
             "cpu": 0,
             "portMappings": [
                 {
@@ -34,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::730335235672:role/ecsDeployRole",
     "executionRoleArn": "arn:aws:iam::730335235672:role/ecsDeployRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -80,7 +80,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-14T17:40:57.313Z",
+    "registeredAt": "2024-07-14T18:00:01.057Z",
     "registeredBy": "arn:aws:iam::730335235672:root",
     "tags": []
 }
